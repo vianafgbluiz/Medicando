@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/dialog_qtdade_superior"
+            android:fontFamily="@font/pt_sans"
+            android:textSize="@dimen/text20"
+            android:text="Quantidade de Parcelas"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <NumberPicker
+            android:id="@+id/numberPickerQuantidadeParcelas"
+            android:theme="@style/NumberPickerTextFormatacao"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnConfirmarNumberPicker"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Confirmar"
+            android:fontFamily="@font/pt_sans"
+            android:textAllCaps="false"
+            android:background="@drawable/dialog_confirmar_qtdd_parcelas"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</FrameLayout>

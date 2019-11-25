@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.VerificaEnderecoFragment"
+    android:background="@color/cor_background_pesquisa_enderecos">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/layoutBackCompras"
+        android:background="@color/colorBackGroundCompras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageBackGroundLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/efetuar_compra_endereco_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/verifica_taxa_entrega_branco"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBackGroundLocation"
+        app:layout_constraintEnd_toEndOf="@+id/imageBackGroundLocation"
+        app:layout_constraintStart_toStartOf="@+id/imageBackGroundLocation"
+        app:layout_constraintTop_toTopOf="@+id/imageBackGroundLocation" />
+
+    <TextView
+        android:id="@+id/qualEnderecoEntrega"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:textAlignment="center"
+        android:fontFamily="@font/pt_sans"
+        android:text="Qual endereço de entrega?"
+        android:textColor="@color/cor_por_empresa"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <View
+        android:id="@+id/divisor_1"
+        android:layout_width="0dp"
+        android:layout_height="0.25dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorDivisoriaRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qualEnderecoEntrega" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerEscolhaEnderecoEntrega"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor_1" />
+
+    <TextView
+        android:id="@+id/textViewRuaEfetuarCompra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/pt_sans"
+
+        android:text="Clique no endereço escolhido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageBackGroundLocation" />
+
+    <TextView
+        android:id="@+id/textViewInfoAddEfetuarCompra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text=" "
+
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/pt_sans"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRuaEfetuarCompra" />
+
+    <ImageView
+        android:id="@+id/backProgressBarVerificaEndereco"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/progress_dialog_background"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor_1" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBarVerificaEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/backProgressBarVerificaEndereco"
+        app:layout_constraintEnd_toEndOf="@id/backProgressBarVerificaEndereco"
+        app:layout_constraintStart_toStartOf="@id/backProgressBarVerificaEndereco"
+        app:layout_constraintTop_toTopOf="@+id/backProgressBarVerificaEndereco" />
+
+
+</android.support.constraint.ConstraintLayout>

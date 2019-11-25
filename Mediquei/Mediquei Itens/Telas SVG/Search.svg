@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="640px" viewBox="0 0 360 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="360" height="48"></rect>
+        <filter x="-0.1%" y="-0.5%" width="100.1%" height="101.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.300000012 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="360" height="224"></rect>
+        <filter x="-1.7%" y="-1.8%" width="103.3%" height="105.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-1.2%" y="-1.0%" width="102.4%" height="103.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.12 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.02" offset="80%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.04" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-7" cx="18" cy="18" r="18"></circle>
+        <filter x="-17.5%" y="-11.9%" width="135.0%" height="135.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMorphology radius="0.15" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter3"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter3" result="shadowOffsetOuter3"></feOffset>
+            <feComposite in="shadowOffsetOuter3" in2="SourceAlpha" operator="out" result="shadowOffsetOuter3"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.02 0" type="matrix" in="shadowOffsetOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(16.000000, 40.000000)" fill="#FFFFFF">
+            <g id="menu" transform="translate(0.000000, 4.000000)">
+                <path d="M23.0305312,7.37428125 L0.96946875,7.37428125 C0.4340625,7.37428125 0,7.80829687 0,8.34375 C0,8.87920312 0.4340625,9.31321875 0.96946875,9.31321875 L23.0305313,9.31321875 C23.5659844,9.31321875 24,8.87920312 24,8.34375 C24,7.80834375 23.5659844,7.37428125 23.0305312,7.37428125 Z" id="Shape" fill-rule="nonzero"></path>
+                <path d="M23.0305312,0.020578125 L0.96946875,0.020578125 C0.4340625,0.020578125 0,0.454640625 0,0.990046875 C0,1.52545312 0.4340625,1.95951562 0.96946875,1.95951562 L23.0305313,1.95951562 C23.5659844,1.95951562 24,1.52545312 24,0.990046875 C24,0.454640625 23.5659844,0.020578125 23.0305312,0.020578125 Z" id="Shape" fill-rule="nonzero"></path>
+                <path d="M23.0305312,14.7279844 L0.96946875,14.7279844 C0.4340625,14.7279844 0,15.162 0,15.6974531 C0,16.2329062 0.4340625,16.6669219 0.96946875,16.6669219 L23.0305313,16.6669219 C23.5659844,16.6669219 24,16.2329062 24,15.6974531 C24,15.162 23.5659844,14.7279844 23.0305312,14.7279844 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+        <g id="Barra-Azul">
+            <g id="Material/Android/Status-bar-360dp-light-gray-Copy-2">
+                <g>
+                    <rect id="status-bar-bg" fill="#008CCC" x="0" y="0" width="360" height="24"></rect>
+                    <g id="status-bar-contents" stroke-width="1" transform="translate(256.000000, 4.000000)">
+                        <g id="time" opacity="0.9" transform="translate(68.000000, 0.000000)" fill="#FFFFFF" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal">
+                            <text id="12:30">
+                                <tspan x="0.98" y="14">12:30</tspan>
+                            </text>
+                        </g>
+                        <g id="battery" transform="translate(41.000000, 0.000000)">
+                            <polygon id="bounds" points="0 0 16 0 16 16 0 16"></polygon>
+                            <polygon id="Shape" fill-opacity="0.600000024" fill="#FFFFFF" points="9 1.875 9 1 6 1 6 1.875 3 1.875 3 15 12 15 12 1.875"></polygon>
+                        </g>
+                        <g id="cellular" transform="translate(21.000000, 0.000000)">
+                            <polygon id="bounds" points="0 0 16 0 16 16 0 16"></polygon>
+                            <polygon id="Shape" fill-opacity="0.600000024" fill="#FFFFFF" points="0 15 14 15 14 1"></polygon>
+                        </g>
+                        <g id="wifi">
+                            <polygon id="bounds" points="2 0 18 0 18 16 2 16"></polygon>
+                            <path d="M0.977372085,4.01593123 C3.48821908,2.12256382 6.61301513,1 10,1 C13.3869849,1 16.5117809,2.12256382 19.0226279,4.01593123 L10,15 L0.977372085,4.01593123 Z" id="Shape" fill-opacity="0.600000024" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Group" transform="translate(16.000000, 40.000000)">
+            <rect id="Rectangle" stroke="#008CCC" x="0.5" y="0.5" width="260" height="39" rx="4"></rect>
+            <text id="Pesquisar-medicament" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" line-spacing="21" fill="#008CCC">
+                <tspan x="34" y="23">Pesquisar medicamentos, sintomas, etc.</tspan>
+            </text>
+            <g id="Search-Azul" transform="translate(8.000000, 11.000000)">
+                <g id="Search" fill="#FFFFFF">
+                    <g id="search">
+                        <path d="M17.4145263,16.3853684 L13.1330526,11.9324211 C14.2338947,10.6237895 14.8370526,8.97726316 14.8370526,7.26315789 C14.8370526,3.25831579 11.5787368,0 7.57389474,0 C3.56905263,0 0.310736842,3.25831579 0.310736842,7.26315789 C0.310736842,11.268 3.56905263,14.5263158 7.57389474,14.5263158 C9.07736842,14.5263158 10.5101053,14.0728421 11.7350526,13.212 L16.0490526,17.6987368 C16.2293684,17.886 16.4718947,17.9892632 16.7317895,17.9892632 C16.9777895,17.9892632 17.2111579,17.8954737 17.3883158,17.7249474 C17.7647368,17.3627368 17.7767368,16.7621053 17.4145263,16.3853684 Z M7.57389474,1.89473684 C10.5341053,1.89473684 12.9423158,4.30294737 12.9423158,7.26315789 C12.9423158,10.2233684 10.5341053,12.6315789 7.57389474,12.6315789 C4.61368421,12.6315789 2.20547368,10.2233684 2.20547368,7.26315789 C2.20547368,4.30294737 4.61368421,1.89473684 7.57389474,1.89473684 Z" id="Shape" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <g id="search-copy" fill="#008CCC">
+                    <path d="M17.4145263,16.3853684 L13.1330526,11.9324211 C14.2338947,10.6237895 14.8370526,8.97726316 14.8370526,7.26315789 C14.8370526,3.25831579 11.5787368,0 7.57389474,0 C3.56905263,0 0.310736842,3.25831579 0.310736842,7.26315789 C0.310736842,11.268 3.56905263,14.5263158 7.57389474,14.5263158 C9.07736842,14.5263158 10.5101053,14.0728421 11.7350526,13.212 L16.0490526,17.6987368 C16.2293684,17.886 16.4718947,17.9892632 16.7317895,17.9892632 C16.9777895,17.9892632 17.2111579,17.8954737 17.3883158,17.7249474 C17.7647368,17.3627368 17.7767368,16.7621053 17.4145263,16.3853684 Z M7.57389474,1.89473684 C10.5341053,1.89473684 12.9423158,4.30294737 12.9423158,7.26315789 C12.9423158,10.2233684 10.5341053,12.6315789 7.57389474,12.6315789 C4.61368421,12.6315789 2.20547368,10.2233684 2.20547368,7.26315789 C2.20547368,4.30294737 4.61368421,1.89473684 7.57389474,1.89473684 Z" id="Shape" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+        <text id="Cancelar" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#008CCC">
+            <tspan x="297.421" y="66">Cancelar</tspan>
+        </text>
+        <text id="Sugestão" font-family="Dosis-Regular, Dosis" font-size="12" font-weight="normal" fill="#888888" fill-opacity="0.5">
+            <tspan x="302.072" y="121">Sugestão</tspan>
+        </text>
+        <text id="Sugestão-Copy-2" font-family="Dosis-Regular, Dosis" font-size="12" font-weight="normal" fill="#888888" fill-opacity="0.5">
+            <tspan x="302.072" y="203">Sugestão</tspan>
+        </text>
+        <text id="Sugestão-Copy-4" font-family="Dosis-Regular, Dosis" font-size="12" font-weight="normal" fill="#888888" fill-opacity="0.5">
+            <tspan x="302.072" y="285">Sugestão</tspan>
+        </text>
+        <text id="Sugestão-Copy" font-family="Dosis-Regular, Dosis" font-size="12" font-weight="normal" fill="#888888" fill-opacity="0.5">
+            <tspan x="302.072" y="162">Sugestão</tspan>
+        </text>
+        <text id="Sugestão-Copy-3" font-family="Dosis-Regular, Dosis" font-size="12" font-weight="normal" fill="#888888" fill-opacity="0.5">
+            <tspan x="302.072" y="244">Sugestão</tspan>
+        </text>
+        <text id="Sugestão-Copy-5" font-family="Dosis-Regular, Dosis" font-size="12" font-weight="normal" fill="#888888" fill-opacity="0.5">
+            <tspan x="302.072" y="326">Sugestão</tspan>
+        </text>
+        <text id="Sofosbuvir" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#008CCC">
+            <tspan x="42" y="122">Sofosbuvir</tspan>
+        </text>
+        <g id="Search-2" transform="translate(16.000000, 108.000000)" fill="#008CCC">
+            <g id="search-copy">
+                <path d="M17.4145263,16.3853684 L13.1330526,11.9324211 C14.2338947,10.6237895 14.8370526,8.97726316 14.8370526,7.26315789 C14.8370526,3.25831579 11.5787368,0 7.57389474,0 C3.56905263,0 0.310736842,3.25831579 0.310736842,7.26315789 C0.310736842,11.268 3.56905263,14.5263158 7.57389474,14.5263158 C9.07736842,14.5263158 10.5101053,14.0728421 11.7350526,13.212 L16.0490526,17.6987368 C16.2293684,17.886 16.4718947,17.9892632 16.7317895,17.9892632 C16.9777895,17.9892632 17.2111579,17.8954737 17.3883158,17.7249474 C17.7647368,17.3627368 17.7767368,16.7621053 17.4145263,16.3853684 Z M7.57389474,1.89473684 C10.5341053,1.89473684 12.9423158,4.30294737 12.9423158,7.26315789 C12.9423158,10.2233684 10.5341053,12.6315789 7.57389474,12.6315789 C4.61368421,12.6315789 2.20547368,10.2233684 2.20547368,7.26315789 C2.20547368,4.30294737 4.61368421,1.89473684 7.57389474,1.89473684 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+        <g id="Search-2" transform="translate(16.000000, 149.000000)" fill="#008CCC">
+            <g id="search-copy">
+                <path d="M17.4145263,16.3853684 L13.1330526,11.9324211 C14.2338947,10.6237895 14.8370526,8.97726316 14.8370526,7.26315789 C14.8370526,3.25831579 11.5787368,0 7.57389474,0 C3.56905263,0 0.310736842,3.25831579 0.310736842,7.26315789 C0.310736842,11.268 3.56905263,14.5263158 7.57389474,14.5263158 C9.07736842,14.5263158 10.5101053,14.0728421 11.7350526,13.212 L16.0490526,17.6987368 C16.2293684,17.886 16.4718947,17.9892632 16.7317895,17.9892632 C16.9777895,17.9892632 17.2111579,17.8954737 17.3883158,17.7249474 C17.7647368,17.3627368 17.7767368,16.7621053 17.4145263,16.3853684 Z M7.57389474,1.89473684 C10.5341053,1.89473684 12.9423158,4.30294737 12.9423158,7.26315789 C12.9423158,10.2233684 10.5341053,12.6315789 7.57389474,12.6315789 C4.61368421,12.6315789 2.20547368,10.2233684 2.20547368,7.26315789 C2.20547368,4.30294737 4.61368421,1.89473684 7.57389474,1.89473684 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+        <g id="Search-2" transform="translate(16.000000, 190.000000)" fill="#008CCC">
+            <g id="search-copy">
+                <path d="M17.4145263,16.3853684 L13.1330526,11.9324211 C14.2338947,10.6237895 14.8370526,8.97726316 14.8370526,7.26315789 C14.8370526,3.25831579 11.5787368,0 7.57389474,0 C3.56905263,0 0.310736842,3.25831579 0.310736842,7.26315789 C0.310736842,11.268 3.56905263,14.5263158 7.57389474,14.5263158 C9.07736842,14.5263158 10.5101053,14.0728421 11.7350526,13.212 L16.0490526,17.6987368 C16.2293684,17.886 16.4718947,17.9892632 16.7317895,17.9892632 C16.9777895,17.9892632 17.2111579,17.8954737 17.3883158,17.7249474 C17.7647368,17.3627368 17.7767368,16.7621053 17.4145263,16.3853684 Z M7.57389474,1.89473684 C10.5341053,1.89473684 12.9423158,4.30294737 12.9423158,7.26315789 C12.9423158,10.2233684 10.5341053,12.6315789 7.57389474,12.6315789 C4.61368421,12.6315789 2.20547368,10.2233684 2.20547368,7.26315789 C2.20547368,4.30294737 4.61368421,1.89473684 7.57389474,1.89473684 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+        <g id="Search-2" transform="translate(16.000000, 231.000000)" fill="#008CCC">
+            <g id="search-copy">
+                <path d="M17.4145263,16.3853684 L13.1330526,11.9324211 C14.2338947,10.6237895 14.8370526,8.97726316 14.8370526,7.26315789 C14.8370526,3.25831579 11.5787368,0 7.57389474,0 C3.56905263,0 0.310736842,3.25831579 0.310736842,7.26315789 C0.310736842,11.268 3.56905263,14.5263158 7.57389474,14.5263158 C9.07736842,14.5263158 10.5101053,14.0728421 11.7350526,13.212 L16.0490526,17.6987368 C16.2293684,17.886 16.4718947,17.9892632 16.7317895,17.9892632 C16.9777895,17.9892632 17.2111579,17.8954737 17.3883158,17.7249474 C17.7647368,17.3627368 17.7767368,16.7621053 17.4145263,16.3853684 Z M7.57389474,1.89473684 C10.5341053,1.89473684 12.9423158,4.30294737 12.9423158,7.26315789 C12.9423158,10.2233684 10.5341053,12.6315789 7.57389474,12.6315789 C4.61368421,12.6315789 2.20547368,10.2233684 2.20547368,7.26315789 C2.20547368,4.30294737 4.61368421,1.89473684 7.57389474,1.89473684 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+        <g id="Search-2" transform="translate(16.000000, 272.000000)" fill="#008CCC">
+            <g id="search-copy">
+                <path d="M17.4145263,16.3853684 L13.1330526,11.9324211 C14.2338947,10.6237895 14.8370526,8.97726316 14.8370526,7.26315789 C14.8370526,3.25831579 11.5787368,0 7.57389474,0 C3.56905263,0 0.310736842,3.25831579 0.310736842,7.26315789 C0.310736842,11.268 3.56905263,14.5263158 7.57389474,14.5263158 C9.07736842,14.5263158 10.5101053,14.0728421 11.7350526,13.212 L16.0490526,17.6987368 C16.2293684,17.886 16.4718947,17.9892632 16.7317895,17.9892632 C16.9777895,17.9892632 17.2111579,17.8954737 17.3883158,17.7249474 C17.7647368,17.3627368 17.7767368,16.7621053 17.4145263,16.3853684 Z M7.57389474,1.89473684 C10.5341053,1.89473684 12.9423158,4.30294737 12.9423158,7.26315789 C12.9423158,10.2233684 10.5341053,12.6315789 7.57389474,12.6315789 C4.61368421,12.6315789 2.20547368,10.2233684 2.20547368,7.26315789 C2.20547368,4.30294737 4.61368421,1.89473684 7.57389474,1.89473684 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+        <g id="Search-2" transform="translate(16.000000, 313.000000)" fill="#008CCC">
+            <g id="search-copy">
+                <path d="M17.4145263,16.3853684 L13.1330526,11.9324211 C14.2338947,10.6237895 14.8370526,8.97726316 14.8370526,7.26315789 C14.8370526,3.25831579 11.5787368,0 7.57389474,0 C3.56905263,0 0.310736842,3.25831579 0.310736842,7.26315789 C0.310736842,11.268 3.56905263,14.5263158 7.57389474,14.5263158 C9.07736842,14.5263158 10.5101053,14.0728421 11.7350526,13.212 L16.0490526,17.6987368 C16.2293684,17.886 16.4718947,17.9892632 16.7317895,17.9892632 C16.9777895,17.9892632 17.2111579,17.8954737 17.3883158,17.7249474 C17.7647368,17.3627368 17.7767368,16.7621053 17.4145263,16.3853684 Z M7.57389474,1.89473684 C10.5341053,1.89473684 12.9423158,4.30294737 12.9423158,7.26315789 C12.9423158,10.2233684 10.5341053,12.6315789 7.57389474,12.6315789 C4.61368421,12.6315789 2.20547368,10.2233684 2.20547368,7.26315789 C2.20547368,4.30294737 4.61368421,1.89473684 7.57389474,1.89473684 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+        <text id="Adalimumabe" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#008CCC">
+            <tspan x="42" y="163">Adalimumabe</tspan>
+        </text>
+        <text id="Losartana-potássica" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#008CCC">
+            <tspan x="42" y="204">Losartana potássica</tspan>
+        </text>
+        <text id="Amoxicilina" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#008CCC">
+            <tspan x="42" y="245">Amoxicilina</tspan>
+        </text>
+        <text id="Paracetamol" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#008CCC">
+            <tspan x="42" y="286">Paracetamol</tspan>
+        </text>
+        <text id="Levonorgestrel" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#008CCC">
+            <tspan x="42" y="327">Levonorgestrel</tspan>
+        </text>
+        <rect id="Rectangle-2" fill-opacity="0.2" fill="#888888" x="16" y="96" width="328" height="1"></rect>
+        <rect id="Rectangle-2-Copy" fill-opacity="0.2" fill="#888888" x="16" y="137" width="328" height="1"></rect>
+        <rect id="Rectangle-2-Copy-2" fill-opacity="0.2" fill="#888888" x="16" y="178" width="328" height="1"></rect>
+        <rect id="Rectangle-2-Copy-3" fill-opacity="0.2" fill="#888888" x="16" y="219" width="328" height="1"></rect>
+        <rect id="Rectangle-2-Copy-4" fill-opacity="0.2" fill="#888888" x="16" y="260" width="328" height="1"></rect>
+        <rect id="Rectangle-2-Copy-5" fill-opacity="0.2" fill="#888888" x="16" y="301" width="328" height="1"></rect>
+        <rect id="Rectangle-2-Copy-6" fill-opacity="0.2" fill="#888888" x="16" y="342" width="328" height="1"></rect>
+        <g id="Material/Android/Keyboard-360dp-dark" transform="translate(0.000000, 370.000000)">
+            <g id="suggestions">
+                <g id="bg">
+                    <use fill="#20272B" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <path d="M119.5,10.5 L119.5,37.5185127" id="Line" stroke="#FFFFFF" opacity="0.150000006" stroke-linecap="square"></path>
+                <path d="M239.5,10.5 L239.5,37.5185127" id="Line" stroke="#FFFFFF" opacity="0.150000006" stroke-linecap="square"></path>
+                <text id="suggestion" opacity="0.8" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="31.44" y="29">suggestion</tspan>
+                </text>
+                <text id="suggestion" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="151.69" y="29">suggestion</tspan>
+                </text>
+                <text id="suggestion" opacity="0.8" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="271.94" y="29">suggestion</tspan>
+                </text>
+            </g>
+            <g id="keyboard" transform="translate(0.000000, 48.000000)">
+                <g id="bg">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#263238" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                </g>
+                <path d="M257,205 C257,206.1 256.1,207 255,207 L109,207 C107.9,207 107,206.1 107,205 L107,185 C107,183.9 107.9,183 109,183 L255,183 C256.1,183 257,183.9 257,185 L257,205 L257,205 Z" id="space" fill="#FFFFFF" opacity="0.1"></path>
+                <text id="," opacity="0.8" font-family=".SFNSDisplay, .SF NS Display" font-size="22" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="73.0351562" y="202">,</tspan>
+                </text>
+                <text id="?123" opacity="0.8" font-family=".AppleSystemUIFont" font-size="14" font-weight="normal" letter-spacing="0.400000006" fill="#FFFFFF">
+                    <tspan x="17.7310547" y="202">?12</tspan>
+                    <tspan x="40.6419922" y="202">3</tspan>
+                </text>
+                <text id="." opacity="0.8" font-family=".SFNSDisplay, .SF NS Display" font-size="22" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="285.035156" y="202">.</tspan>
+                </text>
+                <path d="M28,152 L42,152 L42,154 L28,154 L28,152 Z M39,143 L39,148 L31,148 L31,143 L26,143 L35,134 L44,143 L39,143 Z" id="caps" fill="#FFFFFF" opacity="0.6"></path>
+                <path d="M340,134.7 L325.1,134.7 C324.4,134.7 323.8,135 323.4,135.6 L318,143.7 L323.4,151.8 C323.8,152.3 324.4,152.7 325.1,152.7 L340,152.7 C341.1,152.7 342,151.8 342,150.7 L342,136.7 C342,135.6 341.1,134.7 340,134.7 L340,134.7 Z M337,147.3 L335.6,148.7 L332,145.1 L328.4,148.7 L327,147.3 L330.6,143.7 L327,140.1 L328.4,138.7 L332,142.3 L335.6,138.7 L337,140.1 L333.4,143.7 L337,147.3 L337,147.3 Z" id="delete" fill="#FFFFFF" opacity="0.6"></path>
+                <g id="return" transform="translate(313.000000, 176.000000)">
+                    <g id="button-bg">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <circle stroke="#4CB5AB" stroke-width="0.3" stroke-linejoin="square" fill="#4CB5AB" fill-rule="evenodd" cx="18" cy="18" r="17.85"></circle>
+                        <circle stroke="url(#linearGradient-6)" stroke-width="0.3" stroke-linejoin="square" cx="18" cy="18" r="17.85"></circle>
+                        <circle stroke-opacity="0.12" stroke="#009688" stroke-width="0.3" stroke-linejoin="square" cx="18" cy="18" r="17.85"></circle>
+                    </g>
+                    <path d="M25.1,13.8 L27.1,13.8 L27.1,19.8 L11.9,19.8 L15.5,23.4 L14.1,24.8 L8.1,18.8 L14.1,12.8 L15.5,14.2 L11.9,17.8 L25.1,17.8 L25.1,13.8 Z" id="return-icon" fill="#FFFFFF"></path>
+                </g>
+                <g id="letters" opacity="0.8" transform="translate(10.000000, 27.000000)" fill="#FFFFFF" font-family=".SFNSDisplay, .SF NS Display" font-size="22" font-weight="normal">
+                    <text id="a">
+                        <tspan x="26.3066406" y="72">a</tspan>
+                    </text>
+                    <text id="s">
+                        <tspan x="61.7094727" y="72">s</tspan>
+                    </text>
+                    <text id="d">
+                        <tspan x="95.7373047" y="72">d</tspan>
+                    </text>
+                    <text id="f">
+                        <tspan x="133.487305" y="72">f</tspan>
+                    </text>
+                    <text id="g">
+                        <tspan x="165.785645" y="72">g</tspan>
+                    </text>
+                    <text id="h">
+                        <tspan x="200.898438" y="72">h</tspan>
+                    </text>
+                    <text id="j">
+                        <tspan x="239.583008" y="72">j</tspan>
+                    </text>
+                    <text id="k">
+                        <tspan x="271.489258" y="72">k</tspan>
+                    </text>
+                    <text id="l">
+                        <tspan x="309.583008" y="72">l</tspan>
+                    </text>
+                    <text id="z">
+                        <tspan x="61.6826172" y="124">z</tspan>
+                    </text>
+                    <text id="x">
+                        <tspan x="96.6665039" y="124">x</tspan>
+                    </text>
+                    <text id="c">
+                        <tspan x="131.317383" y="124">c</tspan>
+                    </text>
+                    <text id="v">
+                        <tspan x="166.516113" y="124">v</tspan>
+                    </text>
+                    <text id="b">
+                        <tspan x="200.731934" y="124">b</tspan>
+                    </text>
+                    <text id="n">
+                        <tspan x="236.032715" y="124">n</tspan>
+                    </text>
+                    <text id="m">
+                        <tspan x="267.992676" y="124">m</tspan>
+                    </text>
+                    <text id="q">
+                        <tspan x="8.78564453" y="21">q</tspan>
+                    </text>
+                    <text id="w">
+                        <tspan x="41.9594727" y="21">w</tspan>
+                    </text>
+                    <text id="e">
+                        <tspan x="79.1938477" y="21">e</tspan>
+                    </text>
+                    <text id="r">
+                        <tspan x="116.438965" y="21">r</tspan>
+                    </text>
+                    <text id="t">
+                        <tspan x="151.51416" y="21">t</tspan>
+                    </text>
+                    <text id="y">
+                        <tspan x="184.483887" y="21">y</tspan>
+                    </text>
+                    <text id="u">
+                        <tspan x="219.032715" y="21">u</tspan>
+                    </text>
+                    <text id="i">
+                        <tspan x="257.583008" y="21">i</tspan>
+                    </text>
+                    <text id="o">
+                        <tspan x="288.989746" y="21">o</tspan>
+                    </text>
+                    <text id="p">
+                        <tspan x="323.785645" y="21">p</tspan>
+                    </text>
+                </g>
+                <g id="numbers" opacity="0.6" transform="translate(32.000000, 20.000000)" fill="#FFFFFF" font-family=".AppleSystemUIFont" font-size="10" font-weight="normal">
+                    <text id="1">
+                        <tspan x="0" y="10">1</tspan>
+                    </text>
+                    <text id="2">
+                        <tspan x="33" y="10">2</tspan>
+                    </text>
+                    <text id="3">
+                        <tspan x="68" y="10">3</tspan>
+                    </text>
+                    <text id="4">
+                        <tspan x="104" y="10">4</tspan>
+                    </text>
+                    <text id="5">
+                        <tspan x="138" y="10">5</tspan>
+                    </text>
+                    <text id="6">
+                        <tspan x="174" y="10">6</tspan>
+                    </text>
+                    <text id="7">
+                        <tspan x="208" y="10">7</tspan>
+                    </text>
+                    <text id="8">
+                        <tspan x="243" y="10">8</tspan>
+                    </text>
+                    <text id="9">
+                        <tspan x="278" y="10">9</tspan>
+                    </text>
+                    <text id="0">
+                        <tspan x="313" y="10">0</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

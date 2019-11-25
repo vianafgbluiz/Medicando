@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_resultados">
+
+    <ImageView
+        android:id="@+id/imageFarmaciaAdapterOpcoes"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:elevation="1dp"
+        android:background="@drawable/background_image_resultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icone_medicamento_provisorio" />
+
+    <TextView
+        android:id="@+id/textNomeFarmaciaAdapterOpcoes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pt_sans"
+        android:text="Nome da Farmacia"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imageFarmaciaAdapterOpcoes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPrecoAdapterOpcoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/pt_sans"
+        android:text="R$ XX,XX"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imageFarmaciaAdapterOpcoes"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeFarmaciaAdapterOpcoes" />
+
+    <Button
+        android:id="@+id/btnEscolherAdapterOpcoes"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/filtrado_back_comprar"
+        android:fontFamily="@font/pt_sans"
+        android:text="Escolher"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textPrecoAdapterOpcoes"
+        app:layout_constraintTop_toBottomOf="@+id/textPrecoAdapterOpcoes" />
+
+
+    <View
+        android:id="@+id/divisor_1"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDivisoriaRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

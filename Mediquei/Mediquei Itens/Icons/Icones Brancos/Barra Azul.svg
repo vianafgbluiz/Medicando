@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="14px" viewBox="0 0 94 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Barra Azul</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Barra-Azul" transform="translate(-257.000000, -5.000000)">
+            <g id="Material/Android/Status-bar-360dp-light-gray">
+                <g>
+                    <rect id="status-bar-bg" fill="#008CCC" opacity="0" x="0" y="0" width="360" height="24"></rect>
+                    <g id="status-bar-contents" stroke-width="1" transform="translate(256.000000, 4.000000)">
+                        <g id="time" opacity="0.9" transform="translate(68.000000, 0.000000)" fill="#FFFFFF" font-family="Dosis-Regular, Dosis" font-size="14" font-weight="normal">
+                            <text id="12:30">
+                                <tspan x="0.98" y="14">12:30</tspan>
+                            </text>
+                        </g>
+                        <g id="battery" transform="translate(41.000000, 0.000000)">
+                            <polygon id="bounds" points="0 0 16 0 16 16 0 16"></polygon>
+                            <polygon id="Shape" fill-opacity="0.600000024" fill="#FFFFFF" points="9 1.875 9 1 6 1 6 1.875 3 1.875 3 15 12 15 12 1.875"></polygon>
+                        </g>
+                        <g id="cellular" transform="translate(21.000000, 0.000000)">
+                            <polygon id="bounds" points="0 0 16 0 16 16 0 16"></polygon>
+                            <polygon id="Shape" fill-opacity="0.600000024" fill="#FFFFFF" points="0 15 14 15 14 1"></polygon>
+                        </g>
+                        <g id="wifi">
+                            <polygon id="bounds" points="2 0 18 0 18 16 2 16"></polygon>
+                            <path d="M0.977372085,4.01593123 C3.48821908,2.12256382 6.61301513,1 10,1 C13.3869849,1 16.5117809,2.12256382 19.0226279,4.01593123 L10,15 L0.977372085,4.01593123 Z" id="Shape" fill-opacity="0.600000024" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

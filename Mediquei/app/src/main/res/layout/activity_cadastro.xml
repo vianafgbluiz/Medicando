@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.introducao.CadastroActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/pt_sans"
+        android:text="@string/string_concordar_com_termos"
+        android:textAlignment="center"
+        android:textColor="@color/cor_texto_intro"
+        android:onClick="mostrarTermosUso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="241.5dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/pt_sans"
+        android:text="@string/string_insira_dados_criar_conta"
+        android:textAlignment="center"
+        android:textColor="@color/cor_texto_intro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editNomeCadastro"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/menu_minha_conta"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/pt_sans"
+        android:hint="Nome Completo"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editEmailCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:met_baseColor="@color/cor_texto_intro"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/cor_texto_intro"
+        app:met_textColorHint="@color/cor_text_input_cadastro_login" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editEmailCadastro"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/pt_sans"
+        android:hint="E-mail"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editSenhaCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNomeCadastro"
+        app:met_baseColor="@color/cor_texto_intro"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/cor_texto_intro"
+        app:met_textColorHint="@color/cor_text_input_cadastro_login" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editSenhaCadastro"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/ic_senha"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/pt_sans"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailCadastro"
+        app:met_baseColor="@color/cor_texto_intro"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextColor="@color/cor_texto_intro"
+        app:met_textColorHint="@color/cor_text_input_cadastro_login" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_cadastro_login"
+        android:text="CADASTRAR"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSenhaCadastro" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008ccc</color>
+    <color name="colorPrimaryDark">#005f9b</color>
+    <color name="colorAccent">#5cbcff</color>
+    <color name="cor_texto_intro">#ffffff</color>
+    <color name="cor_fundo_intro">#008CCC</color>
+    <color name="cor_text_input_cadastro_login">#ebebeb</color>
+    <color name="cor_buttons_cadastro_login">#14a6c7</color>
+    <color name="cor_transparente">#00ffffff</color>
+    <color name="cor_background_pesquisa_enderecos">#f2f2f2</color>
+
+    <color name="colorDialogQtdadeBack">#64008ccc</color>
+    <color name="colorBackGroundCompras">#64008ccc</color>
+    <color name="colorHintFormaPgmt">#64008ccc</color>
+
+    <color name="colorDivisoriaRecycler">#bcbcbc</color>
+    <color name="cor_back_quantidade">#fdfdfd</color>
+    <color name="cor_text_quantidade">#aeaeae</color>
+    <color name="cor_por_empresa">#818080</color>
+</resources>

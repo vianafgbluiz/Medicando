@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ConfirmaPedidoFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/resumoPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:textAlignment="center"
+            android:fontFamily="@font/pt_sans"
+            android:text="Resumo do Pedido"
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divisor_1"
+            android:layout_width="0dp"
+            android:layout_height="0.25dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/colorDivisoriaRecycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resumoPedido" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/pt_sans"
+            android:text="Nº Pedido: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divisor_1" />
+
+        <TextView
+            android:id="@+id/textConfirmaPedidoNumeroPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textSit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Situação: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textSituacaoPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textSit"
+            app:layout_constraintTop_toTopOf="@+id/textSit"/>
+
+        <View
+            android:id="@+id/divisor_2"
+            android:layout_width="0dp"
+            android:layout_height="0.25dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorDivisoriaRecycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSit"/>
+
+        <TextView
+            android:id="@+id/resumoCompra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:textAlignment="center"
+            android:fontFamily="@font/pt_sans"
+            android:text="Resumo da Compra"
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divisor_2" />
+
+        <View
+            android:id="@+id/divisor_3"
+            android:layout_width="0dp"
+            android:layout_height="0.25dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/colorDivisoriaRecycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resumoCompra"/>
+
+        <TextView
+            android:id="@+id/textMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Medicamento: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divisor_3"
+            />
+
+        <TextView
+            android:id="@+id/textMedicamentoConfirmaPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textMed"
+            app:layout_constraintTop_toTopOf="@+id/textMed"/>
+
+        <TextView
+            android:id="@+id/textValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Valor Unidade: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMed"
+            />
+
+        <TextView
+            android:id="@+id/textValorUnidadeConfirmaPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textValor"
+            app:layout_constraintTop_toTopOf="@+id/textValor"/>
+
+        <TextView
+            android:id="@+id/textQtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Quantidade: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textValor" />
+
+        <TextView
+            android:id="@+id/textQuantidadeConfirmaPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textQtd"
+            app:layout_constraintTop_toTopOf="@+id/textQtd"/>
+
+        <View
+            android:id="@+id/divisor_4"
+            android:layout_width="0dp"
+            android:layout_height="0.25dp"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@color/colorDivisoriaRecycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textQtd" />
+
+        <TextView
+            android:id="@+id/resumoPagamento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:textAlignment="center"
+            android:fontFamily="@font/pt_sans"
+            android:text="Resumo do Pagamento"
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divisor_4" />
+
+        <View
+            android:id="@+id/divisor_5"
+            android:layout_width="0dp"
+            android:layout_height="0.25dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/colorDivisoriaRecycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resumoPagamento" />
+
+        <TextView
+            android:id="@+id/textFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Forma de Pagamento: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divisor_5"
+            />
+
+        <TextView
+            android:id="@+id/textFormaPagamentoConfirmaPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textFor"
+            app:layout_constraintTop_toTopOf="@+id/textFor"/>
+
+        <TextView
+            android:id="@+id/textQt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Nº Parcelas: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFor" />
+
+        <TextView
+            android:id="@+id/textQuantasVezesConfirmaPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textQt"
+            app:layout_constraintTop_toTopOf="@+id/textQt"/>
+
+
+        <TextView
+            android:id="@+id/textCt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Cartão de Crédito: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textQt" />
+
+        <TextView
+            android:id="@+id/textCartaoConfirmaPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textCt"
+            app:layout_constraintTop_toTopOf="@+id/textCt"/>
+
+        <TextView
+            android:id="@+id/textTaxa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:fontFamily="@font/pt_sans"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Taxa de Entrega: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCt" />
+
+        <TextView
+            android:id="@+id/textTaxaConfirmaPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text=" "
+            android:textColor="@color/cor_por_empresa"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textTaxa"
+            app:layout_constraintTop_toTopOf="@+id/textTaxa"/>
+
+        <TextView
+            android:id="@+id/textValorTotalConfirmaCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="R$: XX,XX"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTaxa" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

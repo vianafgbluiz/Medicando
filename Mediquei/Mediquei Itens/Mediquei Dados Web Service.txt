@@ -1,0 +1,9 @@
+Dados para o Banco de Dados no InfinityFree
+
+MySQL DB Name : epiz_22811726_bd_mediquei
+MySQL User Name	: epiz_22811726
+MySQL Password : K7IGB0EO
+MySQL Host Name : sql104.epizy.com
+
+UOLHOST
+MySQL Password : c!yTdWtg.6paF-K

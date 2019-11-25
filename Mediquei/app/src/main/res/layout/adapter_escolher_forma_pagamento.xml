@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constraintEscolhaFormaPgmt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_apdater_compras">
+
+    <ImageView
+        android:id="@+id/imageAdapterEscolherFormaPagamento"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bandeira_master_card" />
+
+    <TextView
+        android:id="@+id/textApdaterEscolherFormaPgmt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/pt_sans"
+        android:text="Terminado em XXXX"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAdapterEscolherFormaPagamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageAdapterEscolherFormaPagamento"
+        app:layout_constraintTop_toTopOf="@+id/imageAdapterEscolherFormaPagamento" />
+
+</android.support.constraint.ConstraintLayout>

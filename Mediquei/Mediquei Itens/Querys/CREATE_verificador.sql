@@ -1,0 +1,6 @@
+CREATE TABLE med_version (
+	v_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	v_version NUMERIC (6,1)
+) CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+DROP TABLE med_version

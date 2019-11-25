@@ -1,0 +1,3 @@
+Color Primary: #008CCC
+Color Primary Dark: #005F9B
+Color Accent: #5CBCFF

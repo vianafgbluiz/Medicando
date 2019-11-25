@@ -1,0 +1,31 @@
+/*
+	@author: Murilo
+	@preview: Essa ao´jsusdifsdg, ae
+	@data: 17/10/2018
+*/
+
+
+checkBox 	AdicionarAoCarrinho 	MainView
+elemento	funcao			view
+
+/* Copyright Deck
+
+
+
+	@author: 
+ */
+
+padrões de projeto
+
+
+
+
+deck.com/tst -> Teste 
+deck.com/hom -> Homologacao <- 
+deck.com/prd -> Produção 
+
+Trello
+
+-> Modelagem do Banco
+
+

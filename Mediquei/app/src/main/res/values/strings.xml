@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Mediquei</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="intro_1_frase_1">Procure por medicamentos</string>
+    <string name="intro_1_frase_2">Você pode filtrar e econtrar o medicamento ideal para você.</string>
+    <string name="intro_2_frase_1">Receba seus medicamentos sem sair de casa</string>
+    <string name="intro_2_frase_2">Segurança e rapidez na entrega dos seus medicamentos</string>
+    <string name="intro_3_frase_1">Não se preocupe com horário! Atendemos 24h</string>
+    <string name="intro_3_frase_2">Vocês são como família, e por isso, não deixamos na mão</string>
+    <string name="intro_4_frase_1">Medicamento ideal pelo menor preço!</string>
+    <string name="intro_4_frase_2">E ai, vamos começar?</string>
+
+    <string name="menu_inicio">Início</string>
+    <string name="menu_minha_conta">Minha Conta</string>
+    <string name="menu_cesta_compras">Cesta de Compras</string>
+    <string name="menu_lembretes">Lembretes</string>
+    <string name="menu_historico">Histórico de Pedidos</string>
+    <string name="menu_configuracoes">Configurações</string>
+    <string name="menu_central_atendimento">Central de Atendimento</string>
+    <string name="menu_lojas_parceiras">Lojas Parceiras</string>
+    <string name="action_cesta_compras">Cesta de Compras</string>
+    <string name="action_pesquisar">Medicamentos</string>
+
+    <string name="string_insira_dados_criar_conta">Insira os dados abaixo para criar sua conta</string>
+    <string name="string_concordar_com_termos">Ao cadastrar, concordo com os termos de uso, política de privacidade e anti-spam da Mediquei</string>
+    <string name="crie_sua_conta">Crie sua conta grátis!</string>
+    <string name="junte_se_a_milhares">Junte-se a outras pessoas e comece agora mesmo a comprar seus remédios</string>
+    <string name="ja_tenho_conta">Já tenho conta</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="pesquisar_medicamentos">Medicamentos</string>
+    <string name="dados_da_conta">Dados da conta</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="e_mail">E-mail</string>
+    <string name="data_de_cadastro">Data de Cadastro</string>
+    <string name="endereco">Endereço</string>
+    <string name="formas_de_pagamento">Formas de pagamento</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="endereco_cep">CEP *</string>
+    <string name="enderedo_logradouro">Logradouro *</string>
+    <string name="endereco_numero">Número</string>
+    <string name="endereco_complemento">Complemento</string>
+    <string name="endereco_uf">UF *</string>
+    <string name="endereco_cidade">Cidade *</string>
+    <string name="endereco_bairro">Bairro *</string>
+    <string name="foma_nome_no_cartao">Nome no Cartão *</string>
+    <string name="cpf">CPF *</string>
+    <string name="validade">Validade *</string>
+    <string name="cvv">CVV *</string>
+    <string name="numero_do_cartao">Número do Cartão *</string>
+    <string name="adapter_editar_endereco">Editar endereço</string>
+    <string name="sugestao">SUGESTÃO</string>
+    <string name="cesta_vazia">A sua cesta está vazia</string>
+    <string name="filtrar_resultados">Filtrar resultados</string>
+    <string name="receita_obrigatoria">RECEITA OBRIGATÓRIA</string>
+    <string name="comprar">Comprar</string>
+    <string name="adicionar_a_cesta">Adicionar a cesta</string>
+
+    <!-- Quantidades -->
+    <string name="qtdade_um">1 Unidade</string>
+    <string name="qtdade_dois">2 Unidades</string>
+    <string name="qtdade_tres">3 Unidades</string>
+    <string name="qtdade_quatro">4 Unidades</string>
+    <string name="adicionar_aos_favoritos">Adicionar aos Favoritos</string>
+    <string name="efetuar_compra_voltar">Voltar</string>
+    <string name="efetuar_compra_prosseguir">Prosseguir</string>
+    <string name="permissao_prosseguir">Sucesso ao carregar a imagem, pode prosseguir!</string>
+    <string name="menu_sair">Sair</string>
+    <string name="termos_de_uso">
+         O USUÁRIO obriga-se a: \n
+        (i) obter por meios próprios o acesso da Internet, para uso dos APLICATIVOS, bem como mantê-lo em perfeitas condições de funcionamento; \n
+        (ii) assumir inteira responsabilidade pelo uso correto dos APLICATIVOS, conforme constante neste Termo; \n
+        (iii) efetuar o pagamento do preço, quando optar por APLICATIVOS a pagamento, durante a vigência deste Termo; \n
+        (iv) responsabilizar-se pela segurança de seus dados inseridos nos APLICATIVOS, pelo sigilo de seu username e senha a fim de evitar invasões de terceiros, não cabendo qualquer tipo de ressarcimento ou indenização, por parte da MEDIQUEI ao USUÁRIO, na ocorrência das referidas hipóteses; \n
+        (v) respeitar os requisitos da Cláusula Primeira deste Termo, sempre primando pela veracidade dos dados e informações fornecidas à MEDIQUEI, sob pena de responder por eventuais prejuízos que vier a causar à MEDIQUEI ou a quaisquer terceiros; \n
+        (vi) não violar quaisquer direitos de terceiros, notadamente aqueles referentes à propriedade intelectual e direitos autorais da MEDIQUEI; e \n
+        (vii) responder pessoalmente por eventuais perdas e danos a que der causa, seja por culpa ou dolo, sempre isentando a MEDIQUEI de qualquer responsabilidade neste sentido.
+    </string>
+</resources>

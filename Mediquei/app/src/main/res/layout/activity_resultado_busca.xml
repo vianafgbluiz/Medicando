@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_background_pesquisa_enderecos"
+    tools:context=".activities.secundarias.ResultadoBuscaActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/toolbar_padrao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintInterno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeToolbar">
+
+        <Button
+            android:id="@+id/btnFiltrarResultados"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/background_btn_resultado"
+            android:text="@string/filtrar_resultados"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_filtrar_dados_resultados"
+            android:drawablePadding="8dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/pt_sans"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="2dp"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerResultadoBuscas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintInterno" />
+
+
+</android.support.constraint.ConstraintLayout>

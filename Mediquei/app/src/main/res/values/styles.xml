@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SearchViewMainActivity">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#e2e2e2</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+    </style>
+
+    <style name="ToolbarPadrao" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+    <style name="ToolbarCompra" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+    <!--
+        Temas trabalhados no Spinner para que ele tenha toda a configuração
+        visual desenvolvida no protótipo estático.
+    -->
+    <style name="AppTheme.SpinnerTheme">
+        <item name="android:textViewStyle">
+            @style/AppTheme.TextViewStyle
+        </item>
+    </style>
+
+    <style
+        name="AppTheme.TextViewStyle"
+        parent="android:Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/pt_sans</item>
+    </style>
+
+    <!-- Transições de Entrada e Saída para a parte de Resultados -->
+    <style name="AppTheme.NoActionBar.ResultadoBusca">
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
+    </style>
+    <style name="AppTheme.NoActionBar.ResultadoFiltrado">
+        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+    </style>
+
+    <!-- Estilo para o NumberPicker -->
+    <style name="NumberPickerTextFormatacao">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/pt_sans</item>
+    </style>
+
+    <style name="CustomProgressDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="AppCompat.TelaCheia" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="TextInputLayoutCustom">
+        <item name="android:textColorHint">@color/colorHintFormaPgmt</item>
+
+        <item name="android:colorControlNormal">@color/colorPrimary</item>
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cor_transparente"/>
+            <corners android:radius="5dp"/>
+            <stroke android:color="@android:color/white"
+                android:width="1dp"/>
+        </shape>
+    </item>
+
+    <item android:right="8dp">
+        <bitmap
+            android:tint="@android:color/white"
+            android:gravity="center_vertical|right"
+            android:src="@drawable/ic_keyboard_arrow_down_white_18dp" />
+    </item>
+</layer-list>

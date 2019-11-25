@@ -1,0 +1,25 @@
+----------------------------------------------------------
+Padrões de Projeto
+----------------------------------------------------------
+=> Estados de pedidos
+
+-> Todos em caso de sucesso
+
+1) Pedido Efetuado
+2) Pedido Autorizado
+3) Pedido Em transporte
+4) Pedido Entregue
+
+-> Exceções
+5) Pedido Não Autorizado
+6) Pedido cancelado
+7) Pedido Não Entregue
+
+-> Casos em que a farmácia não entrega
+8) Pedido Aguardando Retirada
+----------------------------------------------------------
+=> Endereços Chave Estrangeira
+
+-> 'U' Usuário
+-> 'F' Farmacia
+

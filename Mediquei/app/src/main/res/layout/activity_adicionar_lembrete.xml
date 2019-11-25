@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.secundarias.AdicionarLembreteActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editNomeRemedioLembrete"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+
+            android:drawableLeft="@drawable/lembrete_alarme"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:hint="Nome do Remédio"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/colorPrimary"
+            app:met_textColorHint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imageView50"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNomeRemedioLembrete"
+            app:srcCompat="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans"
+            android:text="Horário"
+            android:textColor="@color/cor_texto_intro"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView50"
+            app:layout_constraintEnd_toEndOf="@+id/imageView50"
+            app:layout_constraintStart_toStartOf="@+id/imageView50"
+            app:layout_constraintTop_toTopOf="@+id/imageView50" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editHoraLembrete"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:hint="MM"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:inputType="time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/imageView50"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/colorPrimary"
+            app:met_textColorHint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans"
+            android:text=":"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/editHoraLembrete"
+            app:layout_constraintEnd_toStartOf="@+id/editHoraLembrete"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editMinutoLembrete"
+            app:layout_constraintTop_toTopOf="@+id/editHoraLembrete" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editMinutoLembrete"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/pt_sans"
+            android:hint="HH"
+            android:gravity="center"
+            android:inputType="time"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView21"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView50"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/colorPrimary"
+            app:met_textColorHint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editHoraLembrete"
+            app:srcCompat="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans"
+            android:text="Dosagem"
+            android:textColor="@color/cor_texto_intro"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <ImageButton
+            android:id="@+id/btnAddDosagem"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/background_lembretes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textViewDosagem"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:srcCompat="@drawable/lembrete_sinal_mais" />
+
+        <TextView
+            android:id="@+id/textViewDosagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnAddDosagem"
+            app:layout_constraintEnd_toStartOf="@+id/btnAddDosagem"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSubDosagem"
+            app:layout_constraintTop_toTopOf="@+id/btnAddDosagem" />
+
+        <ImageButton
+            android:id="@+id/btnSubDosagem"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/background_lembretes"
+            android:paddingBottom="6dp"
+            android:paddingTop="8dp"
+            android:scaleType="center"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDosagem"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnAddDosagem"
+            app:srcCompat="@drawable/lembrete_sinal_menos" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="411dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSubDosagem"
+            app:srcCompat="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textViewMed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans"
+            android:text="Unidade de Medida"
+            android:textColor="@color/cor_texto_intro"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <Button
+            android:id="@+id/btnMLMedida"
+            android:layout_width="@dimen/buttonLembrete"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_medida"
+            android:fontFamily="@font/pt_sans"
+            android:text="ML"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnGotaMedida"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <Button
+            android:id="@+id/btnGotaMedida"
+            android:layout_width="@dimen/buttonLembrete"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_medida"
+            android:fontFamily="@font/pt_sans"
+            android:text="Gota"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnComprimidoMedida"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnMLMedida"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <Button
+            android:id="@+id/btnComprimidoMedida"
+            android:layout_width="@dimen/buttonLembrete"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_medida"
+            android:fontFamily="@font/pt_sans"
+            android:text="Comp."
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnOutroMedida"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnGotaMedida"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <Button
+            android:id="@+id/btnOutroMedida"
+            android:layout_width="@dimen/buttonLembrete"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_medida"
+            android:fontFamily="@font/pt_sans"
+            android:text="Outro"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnComprimidoMedida"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOutroMedida"
+            app:srcCompat="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans"
+            android:text="Aparência"
+            android:textColor="@color/cor_texto_intro"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+            app:layout_constraintEnd_toEndOf="@+id/imageView18"
+            app:layout_constraintStart_toStartOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+        <Button
+            android:id="@+id/btnRemedioNenhum"
+            android:layout_width="@dimen/buttonLembrete"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_medida"
+            android:drawablePadding="18dp"
+            android:drawableTop="@drawable/lembrete_remedio_three"
+            app:layout_constraintEnd_toStartOf="@+id/btnRemedioComprimidoUnico"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+        <Button
+            android:id="@+id/btnRemedioComprimidoUnico"
+            android:layout_width="@dimen/buttonLembrete"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_medida"
+            android:drawablePadding="18dp"
+            android:drawableTop="@drawable/lembrete_remedio_one"
+            app:layout_constraintEnd_toStartOf="@+id/btnRemedioComprimidoDuplo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnRemedioNenhum"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+        <Button
+            android:id="@+id/btnRemedioComprimidoDuplo"
+            android:layout_width="@dimen/buttonLembrete"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_medida"
+            android:drawablePadding="18dp"
+            android:drawableTop="@drawable/lembrete_remedio_two"
+            app:layout_constraintEnd_toStartOf="@+id/btnRemedioGota"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnRemedioComprimidoUnico"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+        <Button
+            android:id="@+id/btnRemedioGota"
+            android:layout_width="@dimen/buttonLembrete"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_medida"
+            android:drawablePadding="18dp"
+            android:drawableTop="@drawable/lembrete_remedio_four"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnRemedioComprimidoDuplo"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRemedioGota"
+            app:srcCompat="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans"
+            android:text="Notificação Push"
+            android:textColor="@color/cor_texto_intro"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintEnd_toEndOf="@+id/imageView19"
+            app:layout_constraintStart_toStartOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="Ativar notificação push?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/swNotificacaoPush"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/swNotificacaoPush" />
+
+        <Switch
+            android:id="@+id/swNotificacaoPush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

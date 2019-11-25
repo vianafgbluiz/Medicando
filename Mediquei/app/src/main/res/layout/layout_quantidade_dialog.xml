@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/dialog_qtdade_superior"
+            android:fontFamily="@font/pt_sans"
+            android:textSize="@dimen/text20"
+            android:text="Quantidade de Produtos"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnQuantidadeDialog1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/qtdade_um"
+            android:fontFamily="@font/pt_sans"
+            android:textAllCaps="false"
+            android:background="@color/cor_back_quantidade"
+            android:textSize="16sp"
+            android:textColor="@color/cor_text_quantidade"
+
+            android:onClick="defineQuantidade1"/>
+
+        <Button
+            android:id="@+id/btnQuantidadeDialog2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/qtdade_dois"
+            android:fontFamily="@font/pt_sans"
+            android:textAllCaps="false"
+            android:background="@color/cor_back_quantidade"
+            android:textSize="16sp"
+            android:textColor="@color/cor_text_quantidade"/>
+
+        <Button
+            android:id="@+id/btnQuantidadeDialog3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/qtdade_tres"
+            android:fontFamily="@font/pt_sans"
+            android:textAllCaps="false"
+            android:background="@color/cor_back_quantidade"
+            android:textSize="16sp"
+            android:textColor="@color/cor_text_quantidade"/>
+
+        <Button
+            android:id="@+id/btnQuantidadeDialog4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/qtdade_quatro"
+            android:fontFamily="@font/pt_sans"
+            android:textAllCaps="false"
+            android:background="@drawable/dialog_qtdade_inferior"
+            android:textSize="16sp"
+            android:textColor="@color/cor_text_quantidade"/>
+
+    </LinearLayout>
+
+</FrameLayout>

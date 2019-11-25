@@ -1,0 +1,15 @@
+INTRODUTORIO -> E-mail 								OK
+CADASTRE-SE -> Add permissao CAMERA						OK
+MAIN -> Adicionar termos de Uso, Minha Conta Arrumar				OK
+RESULTADO BUSCA -> Clique aqui para mais opções de valores 			OK
+MINHA CONTA -> CADASTRAR ENDEREÇO (TOAST SUCESS)				OK
+MINHA CONTA -> Colocar / na DATA						OK
+RESULTADO FILTRADO -> VENDIDO POR						OK
+RESULTADO FILTRADO -> colcoar azul nas prestação do cicero			OK
+RESULTADO FILTRADO -> CHECK CASO FOTO						OK
+taxa -> ALTERAR A TAXA PRA 5,50 FIXO						OK
+COMPRAS -> RESULTADO FILTRADO							OK
+
+MAIN -> Tirar o Reload
+		
+BANCO -> Adicionar Neosaldina 							OK

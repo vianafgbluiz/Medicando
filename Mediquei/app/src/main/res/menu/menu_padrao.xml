@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_padrao_cesta_compras"
+        android:orderInCategory="200"
+        android:title="@string/action_cesta_compras"
+        android:icon="@drawable/menu_cesta_compras"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/search_padrao"
+        android:icon="@drawable/ic_busca_main"
+        android:title="@string/action_pesquisar"
+        android:orderInCategory="100"
+        android:iconifiedByDefault="false"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+</menu>

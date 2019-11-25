@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="go" transform="translate(-4.000000, 0.000000)" fill="#008CCC" fill-rule="nonzero">
+            <g id="back" transform="translate(4.000000, 0.000000)">
+                <path d="M0.267754259,9.81373444 L8.50611525,18.0493568 C8.86760903,18.4099378 9.45328676,18.4099378 9.8156934,18.0493568 C10.1771872,17.6887759 10.1771872,17.1030982 9.8156934,16.7425173 L2.23079022,9.1603527 L9.81478054,1.57818811 C10.1762743,1.21760719 10.1762743,0.631929461 9.81478054,0.270435685 C9.45328676,-0.0901452282 8.86669617,-0.0901452282 8.50520239,0.270435685 L0.266841396,8.50598202 C-0.0890991297,8.86283541 -0.0890991297,9.45771784 0.267754259,9.81373444 Z" id="Chevron_Right" transform="translate(5.043407, 9.159896) scale(-1, 1) translate(-5.043407, -9.159896) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

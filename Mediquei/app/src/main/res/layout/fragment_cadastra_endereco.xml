@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CadastraEnderecoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cor_background_pesquisa_enderecos"
+            android:layout_marginBottom="16dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewCadastraLogradouro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editCEPCadastrarEndereco"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/pt_sans"
+                        android:hint="@string/endereco_cep"
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:met_baseColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editLogradouroCadastrarEndereco"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/pt_sans"
+                        android:hint="@string/enderedo_logradouro"
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editCEPCadastrarEndereco"
+                        app:met_baseColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editNumeroCadastrarEndereco"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/pt_sans"
+                        android:hint="@string/endereco_numero"
+                        android:inputType="number"
+                        android:paddingLeft="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/editCmpltoCadastrarEndereco"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editLogradouroCadastrarEndereco"
+                        app:met_baseColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editCmpltoCadastrarEndereco"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/pt_sans"
+                        android:hint="@string/endereco_complemento"
+                        android:inputType="text"
+                        android:paddingRight="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/editNumeroCadastrarEndereco"
+                        app:layout_constraintTop_toBottomOf="@+id/editLogradouroCadastrarEndereco"
+                        app:met_baseColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <ProgressBar
+                android:id="@+id/progressBarCadastraEndereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardViewCadastraEstado"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewCadastraLogradouro" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewCadastraEstado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBarCadastraEndereco">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editUFCadastrarEndereco"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/pt_sans"
+                        android:hint="@string/endereco_uf"
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:met_baseColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editCidadeCadastrarEndereco"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/pt_sans"
+                        android:hint="@string/endereco_cidade"
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editUFCadastrarEndereco"
+                        app:met_baseColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editBairroCadastrarEndereco"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/pt_sans"
+                        android:hint="@string/endereco_bairro"
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editCidadeCadastrarEndereco"
+                        app:met_baseColor="@color/colorPrimaryDark"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelTextColor="@color/colorPrimary" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnCadastrarEndereco"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button_cadastro_login"
+                android:text="Cadastrar"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewCadastraEstado" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>
