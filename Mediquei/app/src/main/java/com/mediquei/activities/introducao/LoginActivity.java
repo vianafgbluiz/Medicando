@@ -12,7 +12,9 @@ import android.widget.ProgressBar;
 
 import com.mediquei.R;
 import com.mediquei.activities.primarias.MainActivity;
+import com.mediquei.datamodel.UsuarioDataModel;
 import com.mediquei.helper.SolicitarPermissao;
+import com.mediquei.helper.UsuarioPreferences;
 import com.mediquei.model.Usuario;
 import com.mediquei.util.UtilMediquei;
 import com.mediquei.util.UtilUsuario;
@@ -76,6 +78,15 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void validarLogin() {
+
+//        if(usuario.getEmailUser().equals("vianafgluiz@gmail.com") &&
+//                usuario.getSenhaUser().equals("12345678")) {
+//            UsuarioPreferences idUsuarioPreferences = new UsuarioPreferences(LoginActivity.this);
+//            idUsuarioPreferences.salvarIdUsuarioPreferences(1);
+//            idUsuarioPreferences.salvarBuscasPreferences(0);
+//            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//        }
+
         UtilUsuario.ValidarLoginAsyncTask asyncTask =
                 new UtilUsuario.ValidarLoginAsyncTask(LoginActivity.this, usuario, pbLogin);
         asyncTask.execute();

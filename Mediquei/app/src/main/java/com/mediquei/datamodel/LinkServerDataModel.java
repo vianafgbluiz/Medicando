@@ -7,13 +7,16 @@ public class LinkServerDataModel {
      * do BackEnd
      * Dados da Clase LINKSSERVER
      */
+    private final static String APIBuscarDadosLogin = "login";
+    private final static String APIBuscarMedicamentos = "search";
+
 
     private final static String APIBuscarDadosCompra = "APIBuscarDadosCompra.php";
     private final static String APIBuscarDadosEspecificos = "APIBuscarDadosEspecificos.php";
-    private final static String APIBuscarDadosLogin = "APIBuscarDadosLogin.php";
+
     private final static String APIBuscarEnderecosFarmUser = "APIBuscarEnderecosFarmUser.php";
     private final static String APIBuscarEnderecosFarmUserCompra = "APIBuscarEnderecosFarmUserCompra.php";
-    private final static String APIBuscarMedicamentos = "APIBuscarMedicamentos.php";
+
     private final static String APIBuscarOutrasOpcoes = "APIBuscarOutrasOpcoes.php";
     private final static String APIBuscarPedidos = "APIBuscarPedidos.php";
     private final static String APIBuscarResultados = "APIBuscarResultados.php";

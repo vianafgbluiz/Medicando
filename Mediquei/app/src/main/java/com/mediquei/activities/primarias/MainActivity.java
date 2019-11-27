@@ -76,8 +76,6 @@ public class MainActivity extends AppCompatActivity
         svMain = findViewById(R.id.searchViewMain);
         imgReload = findViewById(R.id.imgFiltrarMain);
 
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

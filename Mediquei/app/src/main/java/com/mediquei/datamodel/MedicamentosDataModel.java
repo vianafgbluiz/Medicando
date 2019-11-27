@@ -7,7 +7,7 @@ public class MedicamentosDataModel {
      * Dados da Clase Medicamentos
      */
 
-    private final static String idMedic = "medic_id";
+    private final static String idMedic = "id";
     private final static String nome = "medic_nome";
 
     /*Getters*/

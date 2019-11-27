@@ -169,10 +169,7 @@ public class UtilBuscas {
 
         public BuscarNomeMedicamentoReloadAsyncTask(Context context) {
             this.builder = new Uri.Builder();
-
             this.context = context;
-
-            builder.appendQueryParameter("verificar", "app_buscar_medicamentos");
         }
 
         @Override
@@ -248,15 +245,15 @@ public class UtilBuscas {
             controller.criarTabela(BuscasDataModel.criarTabela());
 
             try {
-                JSONArray jsonArray = new JSONArray(result);
-                JSONObject obj = jsonArray.getJSONObject(0);
+                JSONObject obj = new JSONObject(result);
                 if(obj.getBoolean("sucesso")){
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        obj = jsonArray.getJSONObject(i);
-                        Buscas busca = new Buscas();
-                        busca.setDscBusca(obj.getString("medic_nome"));
-                        busca.setRecenteBusca(0);
-                        controller.salvar(busca);
+                    for (int i = 0; i < obj.length(); i++) {
+                        Log.d("WebService", "onPostExecute: " + i);
+//                        internalo = jsonArray.getJSONObject(i);
+//                        Buscas busca = new Buscas();
+//                        busca.setDscBusca(obj.getString("medic_nome"));
+//                        busca.setRecenteBusca(0);
+//                        controller.salvar(busca);
                     }
                     UtilMediquei.showToastSucess(context, "Foi atualizado com Sucesso!");
                 }

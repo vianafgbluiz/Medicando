@@ -11,7 +11,7 @@ public class UtilMediquei {
     /*Variaveis para conexão localhost
     public static final String URL_WEB_SERVICE = "http://192.168.0.24/ws_mediquei/";
     public static final String URL_WEB_SERVICE = "http://192.168.56.1/ws_mediquei/";*/
-    public static final String URL_WEB_SERVICE = "http://192.168.0.192:888/ws_mediquei/";
+    public static final String URL_WEB_SERVICE = "http://10.14.98.203/medicando-web/public/api/";
 
     /*Produção*/
 //    public static final String URL_WEB_SERVICE = "http://mediquei.com/webservice/";

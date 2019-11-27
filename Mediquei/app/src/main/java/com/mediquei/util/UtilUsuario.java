@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonParser;
 import com.mediquei.activities.primarias.MainActivity;
 import com.mediquei.datamodel.LinkServerDataModel;
 import com.mediquei.datamodel.UsuarioDataModel;
@@ -182,8 +184,8 @@ public class UtilUsuario {
             this.usuario = usuario;
             this.usuario.setSenhaUser(Criptografia64.codificarBase64(this.usuario.getSenhaUser()));
 
-            builder.appendQueryParameter("verificar", "app_validar_login");
-            builder.appendQueryParameter(UsuarioDataModel.getEmail(), usuario.getEmailUser());
+            builder.appendQueryParameter("email", usuario.getEmailUser());
+            builder.appendQueryParameter("password", usuario.getSenhaUser());
         }
 
         @Override
@@ -196,6 +198,7 @@ public class UtilUsuario {
         protected String doInBackground(String... strings) {
             try {
                 url = new URL(UtilMediquei.URL_WEB_SERVICE + LinkServerDataModel.getAPIBuscarDadosLogin());
+                Log.d("WebService", "onPostExecute: " + UtilMediquei.URL_WEB_SERVICE + LinkServerDataModel.getAPIBuscarDadosLogin());
             } catch (MalformedURLException e) {
                 UtilMediquei.showToastShort(context, "Houve erro! Servidor incorreto.");
             } catch (Exception e) {
@@ -230,6 +233,7 @@ public class UtilUsuario {
 
             try {
                 int response_code = conn.getResponseCode();
+                Log.d("WebService", "onPostExecute: " + response_code);
                 if (response_code == HttpURLConnection.HTTP_OK) {
                     InputStream input = conn.getInputStream();
                     BufferedReader reader = new BufferedReader(new InputStreamReader(input));
@@ -254,31 +258,17 @@ public class UtilUsuario {
         protected void onPostExecute(String result) {
             Log.d("WebService", "onPostExecute: " + result);
             try{
-                JSONArray jsonArray = new JSONArray(result);
-                if(jsonArray.length() != 0){
-                    JSONObject object = jsonArray.getJSONObject(0);
-                    if(object.getBoolean("sucesso")){
-                        if(object.getString(UsuarioDataModel.getSenha()).equals(usuario.getSenhaUser())){
-                            if(object.getString(UsuarioDataModel.getAtivo()).toCharArray()[0] == 'A'){
-                                /*SharedPreferences*/
-                                UsuarioPreferences idUsuarioPreferences = new UsuarioPreferences(context);
-                                idUsuarioPreferences.salvarIdUsuarioPreferences(object.getInt(UsuarioDataModel.getId()));
-                                idUsuarioPreferences.salvarBuscasPreferences(0);
-                                context.startActivity(new Intent(context, MainActivity.class));
-                            } else {
-                                UtilMediquei.showToastError(context, "Usuário desativado!");
-                            }
-                        } else {
-                            UtilMediquei.showToastError(context, "Senha incorreta!");
-                        }
-                    } else {
-                        UtilMediquei.showToastError(context,
-                                "Não houve sucesso, tente novamente!");
-                    }
+                JSONObject object = new JSONObject(result);
+                if(object.getBoolean("sucesso")){
+                    UsuarioPreferences idUsuarioPreferences = new UsuarioPreferences(context);
+                    idUsuarioPreferences.salvarIdUsuarioPreferences(object.getInt(UsuarioDataModel.getId()));
+                    idUsuarioPreferences.salvarBuscasPreferences(0);
+                    context.startActivity(new Intent(context, MainActivity.class));
                 } else {
                     UtilMediquei.showToastError(context,
                             "Nenhum registro encontrado no momento!");
                 }
+
             } catch (JSONException e){
                 Log.d("WebService", "Erro JsonException: " + e.getMessage());
             } finally {
